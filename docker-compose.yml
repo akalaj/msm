@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  msm:
+    image: mobile-saltmaster
+    restart: always
+    volumes:
+      - ./msm-data:/srv/salt
+    ports:
+      - 4505:4505
+      - 4506:4506
